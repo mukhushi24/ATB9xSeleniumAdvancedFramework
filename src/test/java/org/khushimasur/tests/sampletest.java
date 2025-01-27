@@ -1,7 +1,12 @@
 package org.khushimasur.tests;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 public class sampletest {
-    public static void main (String[] args){
-        System.out.println("hello world!");
+    @Test
+    public void test_sampleassert(){
+        Assert.assertTrue(true);
+
     }
 }
