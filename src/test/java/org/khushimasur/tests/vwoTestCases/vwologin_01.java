@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class vwologin {
+public class vwologin_01 {
     @Description("Verify that with invalid email, pass, error message is shown on the app.vwo.com")
     @Test
     public void test_negative_vwo_login() throws Exception {
@@ -17,6 +17,7 @@ public class vwologin {
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments("--start-maximized");
 
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\Khushi\\Downloads\\edgedriver_win64\\msedgedriver.exe");
 
         WebDriver driver = new EdgeDriver(edgeOptions);
 //        driver.navigate().to("https://app.vwo.com");
